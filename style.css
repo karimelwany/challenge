@@ -5,6 +5,7 @@
     padding: 0;
     margin: 0;
     font-family: sans-serif;
+    box-sizing: border-box;
 }
 body{
     position: relative;
@@ -75,9 +76,6 @@ p ,li{
 
 .last{
     background-color: rgb(204, 200, 200);
-    width: 60%;
-    padding-left:30px ;
-    position: relative;
 }
 
 .last h4{
@@ -113,4 +111,36 @@ p ,li{
     position: absolute;
     bottom: 20px;
     right: 20px;
+}
+
+
+/* float layout */
+
+.main-header::after{
+    content: "";
+    clear: both;
+    display: block;
+
+}
+
+.main-header h1{
+    float: left;
+}
+.navigation{
+    float: right;
+}
+
+article{
+    width: 65%;
+    float: left;
+margin-left: 10px;
+}
+.last{
+    width: 30%;
+    float: right;
+}
+
+footer{
+    clear: both;
+    border-top: var(--main-color) solid 5px;
 }
