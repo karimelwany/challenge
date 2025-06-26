@@ -7,9 +7,7 @@
     font-family: sans-serif;
     box-sizing: border-box;
 }
-body{
-    position: relative;
-}
+
 h2{
     color: var(--main-color);
     margin: 15px 0;
